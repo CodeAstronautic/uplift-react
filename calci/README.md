@@ -1,7 +1,7 @@
 # Uplift Calculator Assignment
 
 1. Library - ReactJS
-2. Css For Styling
+2. Langages - HTML, CSS
 <p align="center">
   <img src="https://github.com/sanketwin/uplift-react/blob/dev-sanket/calci/UpliftCalculator.PNG" width="350" title="Calculator">
 
