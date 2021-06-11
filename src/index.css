@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+  text-align: center;
+  padding-top: 30vh;
+}
+input{
+  border: 0.5px solid ;
+  height: 30px;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px;
+}
+input:focus { 
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+label,h1{
+  font-weight: 600;
+  color: white;
+  padding: 5px;
+}
+button{
+  padding: 10px 30px;
+  margin: 5px;
+  background-color: #03DAC6;
+  color: white;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: blue;
+}
