@@ -1,0 +1,23 @@
+.keynum{
+    display: inline-block;
+    width: 25%;
+
+}
+
+.keynum-btn{
+    width: 100%;
+    transition: background-color 0.5s ease, color 0.5s ease;
+	background-color: #0f5162;
+	padding: 20px;
+	color: #1f8fab;
+	border-radius: 0px;
+    border-width: 1px;
+    border-color: #35cdf3;
+	font-size: 22px;
+	text-align: center;
+}
+
+.keynum-btn:hover{
+    background-color: rgba(62, 203, 238, 0.6);
+    color: #0d6176;
+}
