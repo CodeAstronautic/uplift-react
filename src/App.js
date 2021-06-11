@@ -1,26 +1,40 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 import "./App.css";
-import Demo from "./demo";
 
 const App = () => {
-  const [customer, setCustomer] = useState(0);
-  const [text, setText] = useState("uplift");
+  const [num1, setNum1] = useState(0);
+  const [num2, setNum2] = useState(0);
+  const [total, setTotal] = useState(num1 + num2);
 
-  const handleIn = () => {
-    setCustomer(customer + 1);
-  };
-  const handleClick = () => {
-    setText("uplkift 1");
-  };
+  function calAdd() {
+    setTotal(num1 + num2)
+  }
+
+  function calSub() {
+    setTotal(num1 - num2)
+  }
+
+  function calMul() {
+    setTotal(num1 * num2)
+  }
+
+  function calDiv() {
+    setTotal(num1 / num2)
+  }
+
   return (
     <div>
-      <h1>{text}</h1>
-      <h1>{customer}</h1>
-      <button onClick={handleIn}> Increment</button>
-      <button onClick={() => setCustomer(customer - 1)}> minus</button>
-      <button onClick={handleClick}> Text 123</button>
-
-      {/* <Demo /> */}
+      <div className="input">
+        <input type="number" value={num1} onChange={e => setNum1(+e.target.value)}
+          placeholder="0" />
+        <input type="number" value={num2} onChange={e => setNum2(+e.target.value)}
+          placeholder="0" />
+      </div>
+      <h3>Total: {total}</h3>
+      <button onClick={calMul}>&times;</button>
+      <button onClick={calAdd}>+</button>
+      <button onClick={calSub}>-</button>
+      <button onClick={calDiv}>/</button>
     </div>
   );
 };
