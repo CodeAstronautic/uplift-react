@@ -1,28 +1,17 @@
-import { useState } from "react";
-import "./App.css";
-import Demo from "./demo";
+import React from "react";
+import {add,sub, mul, div}  from './Calc'
 
-const App = () => {
-  const [customer, setCustomer] = useState(0);
-  const [text, setText] = useState("uplift");
 
-  const handleIn = () => {
-    setCustomer(customer + 1);
-  };
-  const handleClick = () => {
-    setText("uplkift 1");
-  };
-  return (
-    <div>
-      <h1>{text}</h1>
-      <h1>{customer}</h1>
-      <button onClick={handleIn}> Increment</button>
-      <button onClick={() => setCustomer(customer - 1)}> minus</button>
-      <button onClick={handleClick}> Text 123</button>
-
-      {/* <Demo /> */}
-    </div>
-  );
-};
-
+function App(){
+  return(
+    <>
+    <ul>
+      <li>The sum of two numbers is {add(40,4)}</li>
+      <li>The diff of two numbers is {sub(40,4)}</li>
+      <li>The multiplication of two numbers is {mul(40,4)}</li>
+      <li>The division of two numbers is {div(40,4)}</li>
+    </ul>
+    </>
+  )
+}
 export default App;
