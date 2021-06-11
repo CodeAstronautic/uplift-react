@@ -3,6 +3,6 @@
 1. Library - ReactJS
 2. Css For Styling
 <p align="center">
-  <img src="./UplifCalculator.PNG" width="350" title="hover text">
+  <img src="UplifCalculator.PNG" width="350" title="Calculator">
 
 </p>
