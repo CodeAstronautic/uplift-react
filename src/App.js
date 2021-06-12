@@ -15,9 +15,12 @@ function App() {
 			setInputVal(inputVal + event.target.innerHTML + res);
 		} else setInputVal(inputVal + event.target.innerHTML);
 	}
+	function OnChangeHandler(event) {
+		console.log(event.target.value);
+	}
 	return (
 		<div className="App">
-			<input value={inputVal}></input>
+			<input value={inputVal} onChange={OnChangeHandler}></input>
 			<DigitGroup
 				onButtonClickHandler={onButtonClickHandler}
 			></DigitGroup>
