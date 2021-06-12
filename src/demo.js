@@ -5,14 +5,7 @@ class Demo extends Component {
     value: 0,
     xys: "kjkfrsdhfkjsdgf",
   };
-  onIncrement() {
-    this.setState(
-      (prevState) => ({
-        counter: prevState.counter + 1,
-      }),
-      () => console.log(this.state.counter)
-    );
-  }
+
   render() {
     return (
       <div>
