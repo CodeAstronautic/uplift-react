@@ -1,38 +1,66 @@
-.App {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #2c3e50;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.App h1 {
   text-align: center;
+  color: wheat;
+  font-size: 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.number-inputs {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 50px;
+  justify-content: space-evenly;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn button {
+  border-radius: 10px;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.btn button:hover {
+  box-shadow: 0 0 8px 0 #3498db inset, 0 0 10px 4px #3498db;
+  color: black;
+}
+
+.App h2 {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 50px;
+  color: wheat;
+}
+
+input {
+  justify-content: space-between;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 20px;
 }
