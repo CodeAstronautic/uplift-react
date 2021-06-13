@@ -1,0 +1,30 @@
+
+
+
+.container { 
+    background-color: #e4ebf5;
+    width: 265px; 
+    height: 53px;
+    padding: 5px;
+    margin-left:92px;
+    margin-top: 20px;
+    border-radius: 8px;
+    
+}
+
+input {
+width: 240px;
+height: 33px;
+margin-left: 8px;
+margin-top: 8px;
+padding: 3px;
+border-radius: 5px;
+}
+
+button{
+  border: none;
+  padding: 13px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin:10px;
+}
