@@ -1,17 +1,31 @@
-import React from "react";
-import {add,sub, mul, div}  from './Calc'
+import DigitGroup from "./components/DigitGroup";
+import "./App.css";
+import { useState } from "react";
 
-
-function App(){
-  return(
-    <>
-    <ul>
-      <li>The sum of two numbers is {add(40,4)}</li>
-      <li>The diff of two numbers is {sub(40,4)}</li>
-      <li>The multiplication of two numbers is {mul(40,4)}</li>
-      <li>The division of two numbers is {div(40,4)}</li>
-    </ul>
-    </>
-  )
+function App() {
+	const [inputVal, setInputVal] = useState("");
+	function onButtonClickHandler(event) {
+		event.preventDefault();
+		console.log(event);
+		if (event.target.innerHTML === "AC") {
+			setInputVal("");
+		} else if (event.target.innerHTML === "=") {
+			console.log(eval(inputVal));
+			let res = eval(inputVal);
+			setInputVal(inputVal + event.target.innerHTML + res);
+		} else setInputVal(inputVal + event.target.innerHTML);
+	}
+	function OnChangeHandler(event) {
+		console.log(event.target.value);
+	}
+	return (
+		<div className="App">
+			<input value={inputVal} onChange={OnChangeHandler}></input>
+			<DigitGroup
+				onButtonClickHandler={onButtonClickHandler}
+			></DigitGroup>
+		</div>
+	);
 }
+
 export default App;

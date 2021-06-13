@@ -1,0 +1,9 @@
+.button {
+	background-color: indigo;
+	color: white;
+	border: none;
+	outline: none;
+	display: inline-grid;
+	padding: 10px;
+	margin: 3px;
+}
