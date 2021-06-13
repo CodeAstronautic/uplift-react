@@ -1,0 +1,1 @@
+This is a react Calculator App which does simple addition,subtraction ,multiplication and division  of 2 numbers.
