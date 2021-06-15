@@ -1,26 +1,17 @@
-import { useState } from "react";
-import "./App.css";
-import Demo from "./demo";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Register from "./Components/Register";
+import Home from "./Components/Home";
 
 const App = () => {
-  const [customer, setCustomer] = useState(0);
-  const [text, setText] = useState("uplift");
-
-  const handleIn = () => {
-    setCustomer(customer + 1);
-  };
-  const handleClick = () => {
-    setText("uplkift 1");
-  };
   return (
     <div>
-      <h1>{text}</h1>
-      <h1>{customer}</h1>
-      <button onClick={handleIn}> Increment</button>
-      <button onClick={() => setCustomer(customer - 1)}> minus</button>
-      <button onClick={handleClick}> Text 123</button>
-
-      {/* <Demo /> */}
+      <Router>
+        <Switch>
+          <Route path="/" exact={true} component={Home} />
+          <Route path="/register" component={Register} />
+        </Switch>
+      </Router>
     </div>
   );
 };
