@@ -1,18 +1,18 @@
 
-function add(a,b){
+function addition(a,b){
     let sum =a +b;
     return sum;
 }
-function sub(a,b){
+function subtraction(a,b){
     let diff =a - b;
     return diff;
 }
-function mul(a,b){
+function multiplication(a,b){
     let mul =a*b;
     return mul;
 }
-function div(a,b){
+function division(a,b){
     let div =a /b;
     return div;
 }
-export {add,sub, mul, div};
+export {addition,subtraction, multiplication, division};
