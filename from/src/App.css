@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 5, .5);
+}
+
+input {
+    padding: .5rem;
+    margin: .25rem;
+    padding-bottom: .25rem;
+    border: none;
+    border-bottom: 1px double;
+    text-align: left;
+}
+
+h1,
+hr {
+    text-align: center;
+    border-top: 3px solid #111;
+    border-bottom: 3px solid #111;
+    margin: .5rem auto;
+    padding: 2rem;
+    background-color: blue;
+    color: #fff;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+}
+
+form div label {
+    text-align: left;
+    width: 80px;
+}
+
+hr {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    padding: 0rem;
+    border-top: none;
+}
