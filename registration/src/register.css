@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.registerPageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;height: 100vh;
+}
+.inputFieldsContainer{
+    display: flex;
+    flex-direction: column;
+}
+#input{
+    border-color: #3944F7;
+    width: 225px;
+    height: 30px;
+}
+label{
+    color: rgb(0, 0, 0);
+}
+#input:focus{
+    outline: none;
+}
+.singleTextFieldContainer{
+    margin-top: 20px;
+}
+.illustration{
+    height: 300px;
+    width: 400px;
+}
+.container{
+    position: relative;
+}
+#btn{
+    margin-top: 15px;
+    height: 28px;
+    outline: none;
+    border: none;
+    color: #3944F7;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+}
+#btn:hover{
+    background-color: #3944F7;
+    color: white;
+}
+.titleContainer{
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#3944F7 ;
+}
