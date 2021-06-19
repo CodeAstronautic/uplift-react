@@ -5,6 +5,7 @@
 }
 
 form {
+    width: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,10 +14,12 @@ form {
     align-items: center;
     flex-direction: column;
     padding: 1rem;
-    box-shadow: 0 0 5px 0px rgba(0, 0, 5, .5);
+    box-shadow: 0 0 8px 0px rgba(0, 0, 5, .5);
+    border-radius: 10px;
 }
 
 input {
+    width: 100%;
     padding: .5rem;
     margin: .25rem;
     padding-bottom: .25rem;
@@ -41,9 +44,21 @@ form div {
     align-items: center;
 }
 
-form div label {
-    text-align: left;
-    width: 80px;
+#filled-basic {
+    width: 50%;
+}
+
+.MuiFilledInput-root {
+    position: relative;
+    transition: background-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    background-color: transparent!important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 100%!important;
+}
+
+.MuiTextField-root {
+    width: 100%;
 }
 
 hr {
