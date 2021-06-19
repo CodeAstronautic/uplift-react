@@ -1,7 +1,7 @@
 
 function add(a,b){
-    let sum =a +b;
-    return sum;
+    let summation =a +b;
+    return summation;
 }
 function sub(a,b){
     let diff =a - b;
