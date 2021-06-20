@@ -1,79 +1,32 @@
-import logo from './logo.svg';
-import React,{useState} from 'react';
 import './App.css';
-import Keynumber from './Components/Keynumber';
+import { useState } from 'react';
+import PopDialog from './Components/Dailog';
+import {Button} from '@material-ui/core';
 
+const App =() =>{
 
-function App() {
+  // //state variable for dialog to open
+  const[open,setOpen] = useState(false);
 
-  const [evalstring, setEvalstring] = useState("");
-  const addexpression =(expression) =>{
-    setEvalstring(evalstring + expression);
-    
-  }
-  const evalute =() =>{
-    setEvalstring(eval(evalstring));
-  } 
+  // //dailog open function
+  const handleOpen = () =>{
+    setOpen(true);
+  };
+
+  // //dailog close function
+  const handleClose = () =>{
+    setOpen(false);
+  };
 
 
   return (
     <div className="App">
-      <h1>Input values, this will be fun!🥳</h1>
-      <div className="row">
-      <div className="input-wrapper">
-          <input type="text" className="input" id="str-input" value={evalstring} readOnly={true}/>
-        </div>
-        <div>
-        <div className="keynum" style={{width: "50%"}}>
-          <button className="keynum-btn" onClick={() => setEvalstring("")}>C</button>
-        </div>
-        <div className="keynum">
-        <button className="keynum-btn" onClick={() => addexpression("**")}>^</button>
-      </div>
-      <div className="keynum">
-        <button className="keynum-btn" onClick={() => addexpression("*100")}>%</button>
-      </div>
-      </div> 
-      <div>
-      <Keynumber number = "1" onClick={() => addexpression("1")}/>
-      <Keynumber number = "2" onClick={() => addexpression("2")}/>
-      <Keynumber number = "3" onClick={() => addexpression("3")}/>
-      <div className="keynum">
-        <button className="keynum-btn" onClick={() => addexpression("+")}>+</button>
-      </div>
-      </div>
-
-      <div>
-      <Keynumber number = "4" onClick={() => addexpression("4")}/>
-      <Keynumber number = "5" onClick={() => addexpression("5")}/>
-      <Keynumber number = "6" onClick={() => addexpression("6")}/>
-      <div className="keynum">
-        <button className="keynum-btn" onClick={() => addexpression("*")}>*</button>
-      </div>
-      </div>
-
-      <div>
-      <Keynumber number = "7" onClick={() => addexpression("7")}/>
-      <Keynumber number = "8" onClick={() => addexpression("8")}/>
-      <Keynumber number = "9" onClick={() => addexpression("9")}/>
-      <div className="keynum">
-      <button className="keynum-btn" onClick={() => addexpression("/")}>/</button>
-      </div>
-      </div>
-
-      <div>
-      <Keynumber number = "0" onClick={() => addexpression("0")} style={{width: "50%"}}/>
-      <div className="keynum">
-          <button className="keynum-btn" onClick={() => evalute()}>=</button>
-        </div>
-      <div className="keynum">
-      <button className="keynum-btn" onClick={() => addexpression("-")}>-</button>
-      </div>
-      </div>     
-
-    </div>
+      <Button className="startbtn" variant="contained" color="default" size="large" onClick={handleOpen}>
+        Register Yourself!
+      </Button>
+      <PopDialog open={open} handleClose={handleClose} />
     </div>
   );
-}
+};
 
 export default App;

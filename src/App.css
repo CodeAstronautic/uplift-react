@@ -1,44 +1,15 @@
-*{
-  margin:0px;
-  padding:0px;
-}
-
-body{
-  background: #6dd5ed;
-  background: linear-gradient(to left, #6dd5ed, #2193b0);
-}
-
-.App h1{
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 4rem;
-  color: #044853;
-  
-}
-
-.App .row{
-  width: 500px;
-  height: 100%;
-  margin: 50px auto;
-  /* display: flex; */
-  justify-content: center;
+.App {
+  height: 100vh;
+  display: flex;
   align-items: center;
-
+  justify-content: center;
+  /* background-image: linear-gradient(#000b1f, #012448); */
+  background: linear-gradient(45deg,  rgba(66, 183, 245,0.8) 0%,rgba(66, 245, 189,0.4) 100%);
+  color: gray;
 }
 
-
-.App .row .input{
-  width: 100%;
-  padding: 1rem 0rem;
-  transform: translateX(-50%);
-  position: relative;
-  left: 50%;
-  border-width: 0;
-  background: rgba(53, 205, 243, 0.6);
-  text-align: right;
-  border-radius: 4px;
-  font-size: 40px;
-  box-shadow: 5px 0px 40px rgba(0, 0, 0, .4);
-  color:#03404f;
-
-}
+/* .App .startbtn{
+  height: 8rem;
+  font-size: 4rem;
+  padding: 0 3rem;
+} */
