@@ -10,15 +10,15 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import FaceIcon from "@material-ui/icons/Face";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import { Typography } from "@material-ui/core";
+import Naruto from "../images/naruto.png";
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: "20px",
-    height: "60vh",
+    height: "70vh",
     width: "280px",
-    margin: "50px auto",
+    margin: "5px auto",
     borderRadius: "15px",
   },
   avatar: {
@@ -36,6 +36,11 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: "10px 0",
   },
+  naruto: {
+    paddingLeft: "20px",
+    width: "200px",
+    height: "200px",
+  },
 }));
 
 const Login = () => {
@@ -46,7 +51,7 @@ const Login = () => {
         <Paper elevation={10} className={classes.paper}>
           <Grid align="center">
             <Avatar className={classes.avatar}>
-              <FaceIcon />
+              <LockOutlinedIcon />
             </Avatar>
             <h2 className={classes.h2}>LOGIN</h2>
           </Grid>
@@ -89,6 +94,7 @@ const Login = () => {
           <Typography>
             Do you have an account ?<Link>Register</Link>
           </Typography>
+          <img className={classes.naruto} src={Naruto} alt="" />
         </Paper>
       </Grid>
     </div>

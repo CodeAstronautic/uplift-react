@@ -11,7 +11,7 @@ const Navbar = () => {
         <NavLink exact activeClassName="active_class" to="/">
           Home
         </NavLink>
-        <NavLink exact activeClassName="active_class" to="/login">
+        <NavLink exact activeClassName="active_class" to="/tab">
           Login
         </NavLink>
       </div>

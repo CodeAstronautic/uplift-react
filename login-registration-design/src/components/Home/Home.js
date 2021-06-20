@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Router from "../Navbar/Router.svg";
+import Router from "../images/Router.svg";
 
 const Home = () => {
   return (
