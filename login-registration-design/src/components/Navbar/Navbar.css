@@ -1,0 +1,27 @@
+.navbar {
+  height: 50px;
+  display: flex;
+  padding-top: 12px;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: yellowgreen;
+}
+.navbarLogo {
+  font-family: "Nosifer", cursive;
+}
+
+.navbar__nav {
+  display: flex;
+}
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  padding-right: 12px;
+}
+
+a.active_class {
+  color: red;
+  border-bottom: 3px solid red;
+}
