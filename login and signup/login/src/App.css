@@ -1,0 +1,10 @@
+.container{
+ text-align: center;
+ margin-top: 20px;
+ padding: 5px;
+ display: flex !important;
+ flex-direction: row !important;
+}
+input{
+  margin: 15px;
+}
