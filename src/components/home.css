@@ -1,0 +1,35 @@
+.hey{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+  }
+  h1{
+    margin: 180px auto 0 30%;
+    font-size: 50px;
+    color: rgb(83, 83, 83);
+  }
+  .boo{
+    margin: 50px auto 0 42%;
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .boo a{
+    text-decoration: none;
+  }
+  .boo p{
+    background-color: rgb(245, 138, 138);
+    line-height: 40px;
+    text-align: center;
+    width: fit-content;
+    padding:0 20px ;
+    border-radius: 24px;
+    height: 45px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(245, 249, 252);
+  }
+  .boo p:hover{
+    background-color: rgb(223, 88, 88);
+  }
