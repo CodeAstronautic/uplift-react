@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(to right, #6e84de, #7952b3);
+}
+
+.whole-background h1 {
+  text-align: center;
+  margin-top: 60px;
+  color: white;
+  font-size: 4rem;
+  font-weight: 300;
+}
+.calculator {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  margin-bottom: 15px;
+}
+input {
+  font-size: 30px;
+}
+
+.button-background button {
+  font-size: 1.6rem;
+  height: 60px;
+  width: 88px;
+  cursor: pointer;
+  margin-bottom: 3px;
+  margin-right: 2px;
+  background-color: white;
+  border: 2px solid whitesmoke;
+}
+button:hover {
+  background-color: lightblue;
+}
+
+.span-two button {
+  font-size: 1.6rem;
+  width: 182px;
+  height: 60px;
+  cursor: pointer;
+  margin-bottom: 3px;
+  margin-right: 2px;
+  background-color: white;
+  border: 2px solid whitesmoke;
+}
+.span-two button:hover {
+  background-color: lightblue;
+}
+
+.output input {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 50px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+#screen {
+  color: white;
+}
